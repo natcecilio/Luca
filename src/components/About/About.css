@@ -1,0 +1,25 @@
+.about-container {
+  margin: 100px auto;
+  width: 80%;
+  position: relative;
+  height: 120px;
+  display: grid;
+}
+
+h1 {
+  font-size: 21px;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2em;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+
+@media screen and (max-width: 960px) {
+  .about-container {
+    margin: 0px auto;
+    height: 287px;
+    margin-top: 2rem;
+  }
+}
