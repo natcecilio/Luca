@@ -1,7 +1,5 @@
 .about-container {
-  margin: 100px auto;
-  width: 80%;
-  position: relative;
+  width:  80%;
   height: 120px;
   display: grid;
 }
@@ -22,4 +20,12 @@ h1 {
     height: 287px;
     margin-top: 2rem;
   }
+}
+
+.about-container.dark-theme {
+  background: #282828;
+}
+
+.about-container.light-theme{
+  background: #fff;
 }

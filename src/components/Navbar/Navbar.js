@@ -1,37 +1,31 @@
-import React, { Component } from "react";
-import { MenuItems } from "./MenuItem";
+import React from "react";
 import "./Navbar.css";
+import {useTheme} from '../../context/Theme';
 
-class Navbar extends Component {
-  state = { clicked: false };
+export default function Navbar ({pageLink , pageName}) {
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
-  };
+  
+  const { theme } = useTheme();
 
-  render() {
-    return (
-      <nav className="NavbarItems">
-        <div className="navbar-logo" >
-          <a href="/">
-             <img src="images/luca-logo-pt.png" alt="Luca" width="170vw" height="auto"/>
-          </a>
-        </div>
-        
-        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-    );
-  }
+  return (
+    <nav className={`NavbarItems ${theme} `}>
+      <div className={`navbar-logo ${theme} `}>
+        <a href="/">
+           <img src={theme==="light-theme" ? "images/luca-logo-pt.png" : "images/luca-logo-branco.png" } alt="Luca" width="170vw" height="auto"/>
+        </a>
+      </div>
+      
+      <ul className= {`nav-menu ${theme}`}>
+            <li>
+              <a href={pageLink}>
+                {pageName}
+              </a>
+            </li>
+      </ul>
+    </nav>
+  );
+
 }
 
-export default Navbar;
+
+

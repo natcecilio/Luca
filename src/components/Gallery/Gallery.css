@@ -1,6 +1,7 @@
-.image-conatiner {
+.image-container {
   text-align: center;
-  margin: 150px 0;
+  margin: 50px 0;
+ 
 }
 
 .tags {
@@ -25,7 +26,7 @@
   border: none;
   vertical-align: middle;
   -webkit-appearance: none;
-  color: #000;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0);
   outline: none;
 }
@@ -60,6 +61,7 @@
 
 .image {
   width: 100%;
+ 
 }
 
 @media screen and (max-width: 960px) {
@@ -67,4 +69,29 @@
     grid-template-columns: repeat(1, 1fr);
     width: 95%;
   }
+}
+
+.image-container.light-theme{
+  background-color: #fff;
+  color: #000;
+}
+
+.tags.light-theme {
+  color: #000;
+}
+
+.image-container.dark-theme {
+  background-color: #282828;
+  color: #fff;
+}
+
+.tags.light-theme button{
+
+  color: #000;
+
+  
+}
+
+.tag.dark-theme{
+  color: #fff;
 }

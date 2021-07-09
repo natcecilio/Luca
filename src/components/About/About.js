@@ -1,10 +1,14 @@
 import React from 'react';
 import './About.css';
+import {useTheme} from '../../context/Theme';
+
 
 function About () {
 
+  const { theme } = useTheme();
+
   return (
-    <div className='about-container'>
+    <div className={`about-container ${theme}`} >
       <h1>About Me</h1>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
         industry. Lorem Ipsum has been the industry's standard dummy text ever 

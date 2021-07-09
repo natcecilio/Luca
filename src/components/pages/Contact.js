@@ -6,29 +6,31 @@ import '../Contact/Form.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import About from '../About/About';
-
-import { Divider } from 'semantic-ui-react';
+import ThemeBtn from '../ThemeBtn'
+import {useTheme} from '../../context/Theme';
+import './contact.css';
 
  function Contact() {
    const [isSubmitted, setIsSubmitted] = useState(false);
+   const { theme } = useTheme();
 
    function submitForm() {
      setIsSubmitted(true);
    }
   return (
-    <>
-    <Navbar />
+    <div className={`container ${theme}`}>
+    <ThemeBtn />
+    <Navbar pageName="Home" pageLink="/" />
     <About />
-    <Divider />
-        <div className='form-container'>
+      
           {!isSubmitted ? (
               <FormSignup submitForm={submitForm} />
             ) : (
             <FormSuccess />
           )}
-        </div>
+        
     <Footer />        
-    </>
+    </div>
   );
 }
 

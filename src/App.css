@@ -6,13 +6,9 @@
   text-decoration: none;
 }
 
-body {
-  background-color: #fff;
-  color: #000;
-}
 
-/*body::-webkit-scrollbar {
-  width: 1em;
+body::-webkit-scrollbar {
+  width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -20,21 +16,22 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
-}*/
+  background: #282828;
+}
 
 .slideresponsive {
-  width: 95%;
+  width: 100%;
   height: auto;
   display: block;
   margin: auto;
 }
 
-a {
+.App.light-theme{
+  background-color: #fff;
   color: #000;
-  display: flex;
 }
 
-p {
-  color: #000;
+.App.dark-theme{
+  background-color: #282828;
+  color: #fff;
 }

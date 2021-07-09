@@ -1,9 +1,10 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import './slider.css'
 
 const fadeImages = [
-  'images/img-05.jpg',
+  'images/img-04.jpg',
   'images/img-01.jpg',
   'images/img-02.jpg'
 ];
