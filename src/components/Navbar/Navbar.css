@@ -13,7 +13,6 @@
   align-items: center;
   cursor: pointer;
   padding: 35px 0;
-  
 }
 
 .fa-palette {
@@ -27,8 +26,7 @@
   text-align: center;
   justify-content: center;
   padding: 0px 0px 0px 0px;
-  margin-bottom: 20px;
-
+  /*margin-bottom: 20px;*/
 }
 
 .nav-links {
@@ -54,8 +52,6 @@
 }
 
 @media screen and (max-width: 960px) {
-
-
   .nav-menu.active {
     background: #282828;
     left: 0;
@@ -76,7 +72,6 @@
     border-radius: 0;
   }
 
-
   .menu-icon {
     display: block;
     position: absolute;
@@ -93,19 +88,16 @@
   }
 }
 
-.NavbarItems.light-theme{
+.NavbarItems.light-theme {
   background-color: #fff;
- 
 }
 
-.nav-menu.light-theme li a, 
-.nav-menu.light-theme li a:visited{
+.nav-menu.light-theme li a,
+.nav-menu.light-theme li a:visited {
   color: #000;
 }
 
 .nav-menu.dark-theme li a,
-.nav-menu.dark-theme li a:visited{
+.nav-menu.dark-theme li a:visited {
   color: #fff;
 }
-
-

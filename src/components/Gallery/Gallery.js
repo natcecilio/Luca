@@ -19,12 +19,13 @@ const filterItems = [
   },
 
   {
-    name : "Architecture Illustration",
+    name : "Products Illustration",
   },
 
   {
-    name : "Products Illustration",
+    name : "Architecture Illustration",
   },
+
   
   {
     name : "Branding",
@@ -61,7 +62,7 @@ function Gallery() {
          {filteredImages.map(image => (
            <div key={image.id} className="image-item">
              <a href={`/images/${image.imageName}`}>
-                    <img className="image" src={`/images/${image.imageName}`} alt="" />
+                <img className="image" src={`/images/${image.imageName}`} alt="" />
              </a>
             </div> 
          ))}
