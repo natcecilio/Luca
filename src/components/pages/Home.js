@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import ImageSlider from "../Slider/ImageSlider"
 
@@ -14,6 +14,8 @@ import {useTheme} from '../../context/Theme';
 function Home() {
 
   const { theme } = useTheme();
+
+  /*useEffect(() => {document.addEventListener('contextmenu', event => event.preventDefault());},[])*/
 
   return (
     <div className={`App ${theme}`}>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
 import './slider.css'
 
 const fadeImages = [
@@ -10,8 +9,9 @@ const fadeImages = [
 ];
 
 const properties = {
-  duration: 3000,
+  duration: 4000,
   autoplay: true,
+  pauseOnHover: false,
 };
 
 const Slideshow = () => {

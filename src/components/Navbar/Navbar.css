@@ -6,6 +6,7 @@
   align-items: center;
   font-size: 0.8rem;
   text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar-logo {
