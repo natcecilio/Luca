@@ -4,3 +4,24 @@
   display: block;
   margin: auto;
 }
+
+.react-slideshow-container .default-nav {
+  height: 30px;
+  background: rgb(255 255 255 / 0%);
+  width: 30px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-slideshow-container .default-nav:hover,
+.react-slideshow-container .default-nav:focus {
+  /* background: #fff; */
+  color: #666;
+  outline: 0;
+}

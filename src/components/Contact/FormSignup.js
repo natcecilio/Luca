@@ -48,18 +48,20 @@ const { theme } = useTheme();
             </label>
             <textarea 
               rows='5'
+              cols='50'
               id='message'
               type='text' 
               name='message' 
-              className={`form-input ${theme}`}
+              className={`form-input-message ${theme}`}
               placeholder='Enter your message' 
               value={values.message}
               onChange={handleChange} 
               />
                {errors.message && <p>{errors.message}</p>}
+               <button className={`form-input-btn ${theme}`} type='submit'>Submit</button>
          </div>
          
-         <button className={`form-input-btn ${theme}`} type='submit'>Submit</button>
+         
         
       </form>
     </div>

@@ -1,18 +1,30 @@
 .container {
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content:space-between;
-   align-items: center;
- 
- }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
- .container.light-theme{
-   background-color: #fff;
-   color: #000;
- }
+.container.light-theme {
+  background-color: #fff;
+  color: #000;
+}
 
- .container.dark-theme{
-   background-color: #282828;
-   color: #fff;
- }
+.container.dark-theme {
+  background-color: #282828;
+  color: #fff;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 3%;
+  grid-column-gap: 3%;
+}
+
+@media screen and (max-width: 960px) {
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

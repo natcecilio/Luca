@@ -21,14 +21,15 @@ import './contact.css';
     <div className={`container ${theme}`}>
     <ThemeBtn />
     <Navbar pageName="Home" pageLink="/" />
-    <About />
-      
-          {!isSubmitted ? (
-              <FormSignup submitForm={submitForm} />
-            ) : (
-            <FormSuccess />
+    <div className= "contact">
+  
+      {!isSubmitted ? (
+        <FormSignup submitForm={submitForm} />
+        ) : (
+          <FormSuccess />
           )}
-        
+      <About />
+    </div>  
     <Footer />        
     </div>
   );

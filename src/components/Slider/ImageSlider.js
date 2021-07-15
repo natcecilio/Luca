@@ -9,10 +9,15 @@ const fadeImages = [
   'images/img-02.jpg'
 ];
 
+const properties = {
+  duration: 3000,
+  autoplay: true,
+};
+
 const Slideshow = () => {
   return (
     <div className="slide-container">
-      <Fade arrows={false}>
+      <Fade {...properties}>
         <div className="each-fade">
           <div className="image-container">
             <img src={fadeImages[0]} className="slideresponsive" alt="slider" />

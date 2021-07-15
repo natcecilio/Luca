@@ -1,11 +1,5 @@
-.about-container {
-  width:  80%;
-  height: 120px;
-  display: grid;
-}
-
 h1 {
-  font-size: 21px;
+  font-size: 1rem;
   font-family: "Titillium Web";
   font-weight: 600;
   font-style: normal;
@@ -14,18 +8,22 @@ h1 {
   text-transform: none;
 }
 
+p {
+  margin-top: 45px;
+  text-align: justify;
+}
+
+.about-picture {
+  float: left;
+}
+
 @media screen and (max-width: 960px) {
-  .about-container {
-    margin: 0px auto;
-    height: 287px;
-    margin-top: 2rem;
-  }
 }
 
 .about-container.dark-theme {
   background: #282828;
 }
 
-.about-container.light-theme{
+.about-container.light-theme {
   background: #fff;
 }

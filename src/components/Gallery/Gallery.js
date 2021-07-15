@@ -50,7 +50,7 @@ function Gallery() {
   );
 
   return (
-    <div className={`image-container ${theme}`}  oncontextmenu="return false;">
+    <div className={`gal-container ${theme}`}  onContextMenu={() => {return false;}}>
      <div className={`tags ${theme}`}>
        {filterItems.map(filter => (
          <TagButton name= {filter.name} tagActive={tag === filter.name } handleSetTag={setTag} key={filter.name}/>

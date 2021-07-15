@@ -13,15 +13,15 @@ export default function Navbar ({pageLink , pageName}) {
         <a href="/">
            <img src={theme==="light-theme" ? "images/luca-logo-pt.png" : "images/luca-logo-branco.png" } alt="Luca" width="170vw" height="auto"/>
         </a>
+          <ul className= {`nav-menu ${theme}`}>
+              <li>
+                <a href={pageLink}>
+                  {pageName}
+                </a>
+              </li>
+          </ul>
       </div>
       
-      <ul className= {`nav-menu ${theme}`}>
-            <li>
-              <a href={pageLink}>
-                {pageName}
-              </a>
-            </li>
-      </ul>
     </nav>
   );
 
