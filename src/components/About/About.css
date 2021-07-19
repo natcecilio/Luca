@@ -17,13 +17,22 @@ p {
   float: left;
 }
 
-@media screen and (max-width: 960px) {
-}
-
 .about-container.dark-theme {
   background: #282828;
 }
 
 .about-container.light-theme {
   background: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .about-container.dark-theme {
+    background: #282828;
+    margin-top: 10vw;
+  }
+
+  .about-container.light-theme {
+    background: #fff;
+    margin-top: 10vw;
+  }
 }

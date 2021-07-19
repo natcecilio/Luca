@@ -13,8 +13,10 @@ export default function validateInfo(values) {
   }
 
   if(!values.message) {
-    errors.message = "Menssage Required"
+    errors.message = "Message Required"
   }
+
+  
 
   return errors;
 }

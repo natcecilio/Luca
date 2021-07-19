@@ -13,15 +13,13 @@ function About () {
     
       <p>
         <img className="about-picture" src={"images/about.jpg" } alt="Luca" width="190vw" height="auto"/>
-        Lorem Ipsum is simply dummy text of the printing and typesetting 
-        industry. Lorem Ipsum has been the industry's standard dummy text ever 
-        since the 1500s, when an unknown printer took a galley of type and 
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining 
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently 
-        with desktop publishing software like Aldus PageMaker including 
-        versions of Lorem Ipsum.
+        My name is Luca, I have over 20 years of experience in the 3D industry that have allowed me to successfully work for local and international Creative Agencies
+
+        Some of my specialties as a Professional 3D Artist include 3D product visualizations and renderings, 3D animations and motion projects for print, web and video.
+
+        I would love to discuss how we can work together! contact me
+
+        I'm curious about your project!.
       </p>
     </div>
   );

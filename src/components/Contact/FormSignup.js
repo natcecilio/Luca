@@ -3,10 +3,13 @@ import useForm from './useForm';
 import validate from './validateInfo';
 import './Form.css';
 import {useTheme} from '../../context/Theme';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const FormSignup = ({submitForm}) => {
 const{handleChange, values, handleSubmit, errors } = useForm(submitForm, validate);
 const { theme } = useTheme(); 
+const notify = () => toast.success("Your message was sent!", {position: toast.POSITION.TOP_CENTER});
 
 
   return (
@@ -58,7 +61,8 @@ const { theme } = useTheme();
               onChange={handleChange} 
               />
                {errors.message && <p>{errors.message}</p>}
-               <button className={`form-input-btn ${theme}`} type='submit'>Submit</button>
+               <button className={`form-input-btn ${theme}`} type='submit' onClick={notify}>Submit</button>
+               <ToastContainer />
          </div>
          
          
