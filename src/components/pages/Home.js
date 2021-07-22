@@ -9,6 +9,8 @@ import "../../App";
 import ThemeBtn from '../ThemeBtn';
 import {useTheme} from '../../context/Theme';
 
+import ScrollButton from '../ScrolltoTop/ScrollButton';
+
 
 
 function Home() {
@@ -23,6 +25,7 @@ function Home() {
       <Navbar pageName="Contact" pageLink="/contact"/>
       <ImageSlider  />
       <Gallery />
+      <ScrollButton />
       <Footer />
     </div>
   );
