@@ -17,7 +17,7 @@ function Home() {
 
   const { theme } = useTheme();
 
-  /*useEffect(() => {document.addEventListener('contextmenu', event => event.preventDefault());},[])*/
+  useEffect(() => {document.addEventListener('contextmenu', event => event.preventDefault());},[])
 
   return (
     <div className={`App ${theme}`}>
